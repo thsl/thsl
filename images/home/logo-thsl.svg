@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="32px" height="32px" viewBox="0 0 32 32" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 50.2 (55047) - http://www.bohemiancoding.com/sketch -->
+    <title>Fill 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Desktop" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Home---Desktop" transform="translate(-24.000000, -36.000000)" fill="#FFFFFF">
+            <g id="Intro">
+                <g id="Group-2" transform="translate(24.000000, 36.000000)">
+                    <g id="Logo">
+                        <path d="M21.12,12.64 L17.3866667,12.64 L17.3866667,21.76 L14.72,21.76 L14.72,12.64 L11.52,12.64 L11.52,9.6 L21.12,9.6 L21.12,12.64 Z M16,0 C7.16354026,0 0,7.16354026 0,16 C0,24.8364597 7.16354026,32 16,32 C24.8364597,32 32,24.8364597 32,16 C32,7.16354026 24.8364597,0 16,0 Z" id="Fill-1"></path>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

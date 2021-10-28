@@ -1,0 +1,80 @@
+<div class="modal-header" style="background-image: url(portfolio/images/fj/jobs-modal-top-fj.jpg);">
+    <div class="modal-title clearfix" id="myModalLabel">
+        <h4>Campanha Fé em Jesus</h4>
+        <p>Pré-lançamento do portal</p>
+    </div>
+</div>
+<div class="modal-body">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 mb-md">
+                <p class="titulosmodal">Projeto:</p>
+                <p>Campanha para pré-lançamento do portal "Fé em Jesus", veiculada em agosto de 2012.</p>
+                <p>A ideia é que cada usuário acendesse uma luz no mapa, de acordo com o local em que mora, tornando o mapa brilhoso.</p>
+                <a href="http://thslopes.com.br/dev/g5/" target="_blank" class="btn btn-default"><i class="fa fa-external-link"></i> Ampliar projeto</a>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <p class="titulosmodal">Status do projeto:</p>
+                <div class="statusdoprojeto" id="prt001"></div>
+                <div class="row mt-lg">
+                    <div class="col-md-12 clearfix participacao">
+                        <p class="titulosmodal">Participação no projeto:</p>
+                        <div class="col-xs-6 col-md-5 col-md-offset-2">
+                            <div class="workinproject text-center">
+                                <i class="fa fa-sitemap"></i>
+                            </div>
+                            <p class="titulosmodal">Arquiteto
+                                <br>de informação</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="workinproject text-center">
+                                <i class="fa fa-pencil"></i>
+                            </div>
+                            <p class="titulosmodal">Design</p>
+                        </div>
+                        <!--<div class="col-xs-4 col-md-4">
+                            <div class="workinproject text-center">
+                                <i class="fa fa-code"></i>
+                            </div>
+                            <p class="titulosmodal">Codificação</p>
+                        </div>-->
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="clearfix text-center">
+                <p class="titulosmodal">Identidade visual</p>
+                <div class="col-md-6 mb-lg text-center">
+                    <img src="portfolio/images/g5/g5-000.jpg" class="img-responsive" />
+                </div>
+                <div class="col-md-6 mb-lg">
+                    <img src="portfolio/images/g5/g5-001.jpg" class="img-responsive" />
+                </div>
+            </div>
+
+            <div class="clearfix">
+                <div class="col-md-12 mb-lg text-center">
+                    <p class="titulosmodal">Resultado final</p>
+                    <div class="text-center">
+                        <img src="portfolio/images/g5/g5-002.jpg" class="img-responsive" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+var myCircle = Circles.create({
+    id: 'prt001',
+    radius: 50,
+    value: 100,
+    width: 10,
+    colors: ['#d5d5d5', '#666565'],
+    text: function(value) {
+        return value + '<span class=\'percentual\'>%</span>';
+    }
+});
+</script>

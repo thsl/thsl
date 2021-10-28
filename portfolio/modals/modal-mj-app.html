@@ -1,0 +1,81 @@
+<div class="modal-header">
+    <div class="bck-header mj-app"></div>
+    <div class="modal-title clearfix" id="myModalLabel">
+        <h4>Ministério da Justiça</h4>
+        <p>Aplicativo para o Projeto Pensando o Direito</p>
+    </div>
+
+</div>
+<div class="projeto-exp">
+    <p>Projeto <span class="exp-icon"><i class="ion-erlenmeyer-flask"></i></span> Experimental
+    </p>
+</div>
+<div class="modal-body">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 mb-md">
+                <p class="titulosmodal">Sobre o projeto:</p>
+                <p>O projeto Pensando o Direito publica uma série de pesquisas e realiza eventos, por isso precisava de uma plataforma para que
+                    seus usuários encontrassem de forma simples estas informações.</p>
+                <p>Desenvolvi a identidade visual e a análise de UX.</p>
+                <a href="portfolio/app/mj-app/index.html" target="_blank" class="btn btn-danger"><i
+                        class="ion-android-open"></i> Ver projeto</a>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <p class="titulosmodal">Status do projeto:</p>
+                <div class="statusdoprojeto" id="prt001"></div>
+                <div class="row mt-lg">
+                    <div class="col-md-12 clearfix participacao">
+                        <p class="titulosmodal">Participação no projeto:</p>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="workinproject text-center">
+                                <i class="ion-clipboard"></i>
+                            </div>
+                            <p class="titulosmodal">UX</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 col-md-6">
+                            <div class="workinproject text-center">
+                                <i class="ion-paintbrush"></i>
+                            </div>
+                            <p class="titulosmodal">Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+
+            <div class="clearfix text-center mt-lg">
+                <p class="titulosmodal">Estudos de UX e arquiteura da informação</p>
+                <div class="col-lg-12 mb-lg text-center">
+                    <img src="portfolio/images/mj/mj-app/mj-app-mock.jpg" class="img-responsive"/>
+                </div>
+
+            </div>
+            <div class="clearfix text-center mt-lg">
+                <p class="titulosmodal">Criação do design</p>
+                <div class="col-lg-12 mb-lg text-center">
+                    <img src="portfolio/images/mj/mj-app/mj-app-001.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-lg-12 mb-lg text-center">
+                    <img src="portfolio/images/mj/mj-app/mj-app-002.jpg" class="img-responsive"/>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var myCircle = Circles.create({
+        id: 'prt001',
+        radius: 50,
+        value: 78,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+</script>

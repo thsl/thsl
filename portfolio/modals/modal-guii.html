@@ -1,0 +1,86 @@
+<div class="modal-header">
+    <div class="bck-header guii"></div>
+    <div class="modal-title clearfix" id="myModalLabel">
+        <h4>Guii.me</h4>
+        <p>Logo e interface do app</p>
+    </div>
+</div>
+<div class="projeto-exp">
+    <p>Projeto <span class="exp-icon"><i class="ion-erlenmeyer-flask"></i></span> Experimental
+    </p>
+</div>
+<div class="modal-body">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 mb-md">
+                <p class="titulosmodal">Projeto:</p>
+                <p>O aplicativo tem como principal objetivo permitir que usuários solicitem guinchos, ou serviços de socorro e que
+                    pagem via o próprio app.</p>
+                <a href="portfolio/app/guii-app/index.html" target="_blank" class="btn btn-danger btn-md"><i
+                        class="ion-android-open"></i> Ver projeto</a>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <p class="titulosmodal">Status do projeto:</p>
+                <div class="statusdoprojeto" id="prt001"></div>
+                <div class="row mt-lg">
+                    <div class="col-md-12 clearfix participacao">
+                        <p class="titulosmodal">Participação no projeto:</p>
+                        <div class="col-xs-6 col-md-5 col-md-offset-2">
+                            <div class="workinproject text-center">
+                                <i class="ion-clipboard"></i>
+                            </div>
+                            <p class="titulosmodal">UX</p>
+                        </div>
+                        <div class="col-xs-6 col-md-3">
+                            <div class="workinproject text-center">
+                                <i class="ion-paintbrush"></i>
+                            </div>
+                            <p class="titulosmodal">Design</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="clearfix">
+                <div class="col-sm-12 text-center">
+                    <p class="titulosmodal">Concepção da logo</p>
+                </div>
+                <div class="col-xs-12 mb-lg text-center">
+                    <img src="portfolio/images/guii/logo-guii-001.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 mb-lg text-center">
+                    <img src="portfolio/images/guii/logo-guii-002.jpg" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="clearfix">
+                <div class="col-sm-12 text-center">
+                    <p class="titulosmodal">Estudos de UX e design</p>
+                </div>
+                <div class="col-xs-12 mb-lg text-center">
+                    <img src="portfolio/images/guii/guii-mockup-001.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 mb-lg text-center">
+                    <img src="portfolio/images/guii/guii-mockup-002.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-xs-12 mb-lg text-center">
+                    <img src="portfolio/images/guii/guii-mockup-003.jpg" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var myCircle = Circles.create({
+        id: 'prt001',
+        radius: 50,
+        value: 45,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+</script>

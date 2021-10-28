@@ -1,0 +1,83 @@
+<div class="modal-header">
+    <div class="bck-header zenite"></div>
+    <div class="modal-title clearfix" id="myModalLabel">
+        <h4>Zênite </h4>
+        <p>Logo e site da empresa</p>
+    </div>
+
+</div>
+<div class="modal-body">
+    <div class="clearfix">
+        <div class="row">
+            <div class="col-md-8 col-xs-12 mb-md">
+                <p class="titulosmodal">Sobre o projeto:</p>
+                <p>Desenvolvi a identidade visual, a arquitetura da informação e a codificação do site de apresentação
+                    da empresa</p>
+                <p>A Zênite Soluções em Engenharia surgiu para projetar iluminações com base em energia solar.</p>
+                <a href="http://zenitesolucoes.eng.br/" target="_blank" class="btn btn-danger"><i
+                        class="ion-android-open"></i> Ver projeto</a>
+            </div>
+            <div class="col-md-4 col-xs-12 text-center">
+                <p class="titulosmodal">Status do projeto:</p>
+                <div class="statusdoprojeto" id="prt001"></div>
+                <div class="row mt-lg">
+                    <div class="col-md-12 clearfix participacao">
+                        <p class="titulosmodal">Participação no projeto:</p>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="workinproject text-center">
+                                <i class="ion-clipboard"></i>
+                            </div>
+                            <p class="titulosmodal">UX</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="workinproject text-center">
+                                <i class="ion-paintbrush"></i>
+                            </div>
+                            <p class="titulosmodal">Design</p>
+                        </div>
+                        <div class="col-xs-12 col-sm-4 col-md-4">
+                            <div class="workinproject text-center">
+                                <i class="ion-code-working"></i>
+                            </div>
+                            <p class="titulosmodal">HTML</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="clearfix text-center">
+                <p class="titulosmodal">Identidade visual</p>
+                <div class="col-md-12 mb-lg text-center">
+                    <img src="portfolio/images/zenite/logo-zenite.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-md-12 mb-lg text-center">
+                    <img src="portfolio/images/zenite/logo-construcao.jpg" class="img-responsive"/>
+                </div>
+                <div class="col-md-12 mb-lg text-center">
+                    <img src="portfolio/images/zenite/mock-cartao.jpg" class="img-responsive"/>
+                </div>
+            </div>
+            <div class="clearfix text-center">
+                <p class="titulosmodal">Design do site</p>
+                <div class="col-md-12 mb-lg text-center">
+                    <img src="portfolio/images/zenite/zenite-home.jpg" class="img-responsive"/>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script type="text/javascript">
+    var myCircle = Circles.create({
+        id: 'prt001',
+        radius: 50,
+        value: 100,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+</script>
