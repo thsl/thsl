@@ -4,12 +4,17 @@ body {
   width: 100%;
   height: 100%;
   font-family: @font-light;
-  color: @thsldarkgrey;
+  font-size: 100%;
+  color: @light;
   text-rendering: optimizeLegibility;
-  background-color: @light;
+  background-color: #1A2D3C;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  @media (max-width: @screen-md) {
+
+
+  }
 }
 
 html {
@@ -28,20 +33,24 @@ h4, .h4,
 h5, .h5,
 h6, .h6 {
   font-family: @font-heavy;
-    font-weight: 400;
-    letter-spacing: -0.03em;
+    font-weight: 100;
+    letter-spacing:normal;
     position: relative;
-    padding-bottom: 64px;
-    &::after{
-position:absolute;
-width: 40%;
-bottom: 32px;
-content: '';
-height: 1px;
-background-color: @light;
-left: 0;
-opacity: 0.2;
-    }
+
+}
+
+.divisor-title{
+  padding-bottom: 64px;
+  &::after{
+    position:absolute;
+    width: 40%;
+    bottom: 32px;
+    content: '';
+    height: 1px;
+    background-color: @light;
+    left: 0;
+    opacity: 0.2;
+  }
 }
 
 h1, .h1 {
@@ -966,16 +975,39 @@ body {
 }
 
 .btn-outline {
-  border: 2px solid #fff;
-  border-radius: 50px;
+  color: @light;
+  border: 1px solid @light;
+  border-radius: 4px;
   text-align: center;
-  padding: 8px;
+  padding: 16px 32px;
   text-decoration: none;
   font-weight: 700;
-  font-family: @font-heavy;
-  margin: 8px 0;
+  font-family: @font-light;
+  margin: 16px 0;
   line-height: 3;
   text-transform: uppercase;
+  font-size: 12px;
+  background-color: transparent;
+  cursor: pointer;
+  &:hover{
+    border: 1px solid #fff;
+    background-color: RGBA(255,255,255,0.22);
+    color: #fff;
+    cursor: pointer;
+  }
+  &:active, &:focus{
+    border: 1px solid #fff;
+    background-color: RGBA(255,255,255,0.22);
+    color: #fff;
+    cursor: pointer;
+    &:hover{
+      border: 1px solid #fff;
+      background-color: RGBA(255,255,255,0.22);
+      color: #fff;
+      cursor: pointer;
+    }
+  }
+
   @media (max-width: @screen-sm) {
     font-size: 8px;
     white-space: nowrap;
@@ -996,4 +1028,11 @@ body {
   color: #d9534f;
   border: 2px solid #d9534f;
   background-color: transparent;
+}
+
+.primary-font{
+  font-family: @font-light !important;
+}
+.secondary-font{
+  font-family: @font-heavy !important;
 }
