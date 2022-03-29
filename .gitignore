@@ -1,0 +1,16 @@
+#Mac DS_STORE
+.DS_Store
+
+#Arquivos de deploy
+*.zip
+/node_modules
+
+#Arquivos de backup
+*.backup
+
+#Arquivo do compilador less
+.prepros.cfg
+
+#Arquivos do webstorm
+.idea
+/typings
