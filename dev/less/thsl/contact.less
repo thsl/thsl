@@ -1,0 +1,91 @@
+/*------------------- Contato -------------------*/
+
+#contato {
+  background: url(../images/home/bck-contato.jpg) no-repeat center center fixed #466f79;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  -o-background-size: cover;
+  color: @light;
+  //font-family: "droid", Georgia, "Times New Roman", serif;
+  text-align: center;
+
+  .contactnumber {
+    margin-top: 30px;
+
+    a {
+      color: #fff;
+    }
+
+    .clearfix();
+    //font-weight: 600;
+    .coutry {
+      font-size: 29px;
+      @media (max-width: @screen-md) {
+        font-size: 19px;
+      }
+    }
+    .city {
+      font-size: 29px;
+      @media (max-width: @screen-md) {
+        font-size: 19px;
+      }
+    }
+    .number {
+      font-size: 52px;
+      @media (max-width: @screen-md) {
+        font-size: 42px;
+      }
+    }
+  }
+  .mail {
+    .mailto {
+      font-size: 25px;
+      @media (max-width: @screen-md) {
+        font-size: 18px;
+      }
+    }
+  }
+
+}
+
+.btn-social {
+  width: 30px;
+  height: 30px;
+  margin-top: 5px;
+  padding: 0;
+  opacity: (0.5);
+  font-size: 20px;
+  color: #fff;
+  border-radius: 15px;
+  background: transparent;
+  -webkit-transition: background .1s ease-in-out;
+  -moz-transition: background .1s ease-in-out;
+  transition: background .1s ease-in-out;
+  &:hover, &:focus {
+    outline: none;
+    color: #fff;
+    border: 1px solid #fff;
+    border-radius: 15px;
+    background: fade(#77b3c3, 10%);
+    opacity: (1);
+  }
+  i.animated {
+    -webkit-transition-property: -webkit-transform;
+    -webkit-transition-duration: 1s;
+    -moz-transition-property: -moz-transform;
+    -moz-transition-duration: 1s;
+  }
+  &:hover {
+    i.animated {
+      -webkit-animation-name: pulse;
+      -moz-animation-name: pulse;
+      -webkit-animation-duration: 1.5s;
+      -moz-animation-duration: 1.5s;
+      -webkit-animation-iteration-count: infinite;
+      -moz-animation-iteration-count: infinite;
+      -webkit-animation-timing-function: linear;
+      -moz-animation-timing-function: linear;
+    }
+  }
+}

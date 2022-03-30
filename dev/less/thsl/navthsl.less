@@ -1,0 +1,133 @@
+/* --------------------- Barra de navegação -------------------- */
+
+.navbar-custom {
+  .logo-thsl.logo-top {
+    display: none;
+  }
+  @media (max-width: @screen-sm-min) {
+    .logo-thsl.logo-top {
+      display: block;
+    }
+  }
+  .navbar-right {
+  }
+  margin-bottom: 0;
+  background-color: #45757a;
+  .navbar-brand {
+    width: auto;
+    h1 {
+      font-size: 20px;
+      padding: 0;
+      margin: 0;
+      letter-spacing: -0.03em;
+    }
+    &:focus {
+      outline: none;
+    }
+    .navbar-toggle {
+      padding: 4px 6px;
+      font-size: 12px;
+      color: @light;
+      &:focus, &:active {
+        outline: none;
+      }
+    }
+  }
+  a {
+    color: @light;
+  }
+  .nav {
+    li {
+      &.active {
+        outline: none;
+        background-color: fade(@light, 30%);
+      }
+      a {
+        text-transform: uppercase;
+        font-size: 13px;
+        font-weight: 100;
+        -webkit-transition: background .3s ease-in-out;
+        -moz-transition: background .3s ease-in-out;
+        transition: background .3s ease-in-out;
+        &:hover, &:focus, &.active {
+          outline: none;
+          background-color: fade(@light, 30%);
+        }
+      }
+    }
+  }
+  .navbar-toggle {
+    position: relative;
+    float: right;
+    padding: 9px 15px;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 0;
+    background-color: #32575b;
+    background-image: none;
+    border: 0;
+    border-radius: 0;
+    color: #fff;
+    height: 49px;
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 767px) {
+  .navbar {
+    padding: 20px 0;
+    border-bottom: none;
+    letter-spacing: 1px;
+    background: transparent;
+    -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+    transition: background .5s ease-in-out, padding .5s ease-in-out;
+  }
+
+  .top-nav-collapse {
+    padding: 0;
+    background-color: #45757a;
+  }
+
+  .navbar-custom.top-nav-collapse {
+    .nav {
+      text-transform: uppercase;
+      padding: 0;
+      float: right;
+    }
+    .logo-thsl.logo-top {
+      display: block;
+    }
+  }
+}
+
+.logo-thsl.logo-top {
+  .text-t {
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+    padding: 4px 0 0 1px;
+    font-family: "droid", Georgia, "Times New Roman", Arial, sans-serif;
+    border-radius: 50px;
+    font-size: 15px;
+    color: @light;
+    border: 2px solid #fff;
+    box-shadow: @thslshadow;
+    margin-top: 10px;
+  }
+}
+
+.nav-top {
+  position: absolute;
+  width: 100%;
+  background-color: transparent;
+  padding: 32px 0;
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+  a {
+    color: #fff;
+    font-weight: 700;
+  }
+}
