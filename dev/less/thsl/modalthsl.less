@@ -113,7 +113,7 @@
   z-index: 99999;
   padding: 0;
   margin: 0 auto 0 20px;
-  height: 52px;
+  height: 120px;
   background: rgba(0, 0, 0, 1);
   background: -moz-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.49) 51%, rgba(0, 0, 0, 0) 100%);
   background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(0, 0, 0, 1)), color-stop(51%, rgba(0, 0, 0, 0.49)), color-stop(100%, rgba(0, 0, 0, 0)));
@@ -121,10 +121,10 @@
   background: -o-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.49) 51%, rgba(0, 0, 0, 0) 100%);
   background: -ms-linear-gradient(top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.49) 51%, rgba(0, 0, 0, 0) 100%);
   background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.49) 51%, rgba(0, 0, 0, 0) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#000000', endColorstr='#000000', GradientType=0);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#1A2D3C', endColorstr='#1A2D3C', GradientType=0);
 
   .fixed-top-inner {
-    height: 52px;
+    height: 120px;
     position: relative;
 
     .closebtn {
@@ -140,7 +140,7 @@
       height: 55px;
       width: 55px;
       right: 30px;
-      top: 0px;
+      top: 32px;
     }
   }
 }
@@ -148,12 +148,10 @@
 .modal-header {
   background-color: transparent;
   position: relative;
-  height: 180px;
   overflow: hidden;
   box-shadow: none;
   border: 0;
   @media (max-width: 767px) {
-    height: 175px;
   }
   .bck-header {
     background-position: center center;
@@ -175,22 +173,14 @@
   // Title text within header
   .modal-title {
     margin: 0;
-    margin-top: 11%;
+    margin-top: 8rem;
     color: #fff;
     text-align: center;
     text-shadow: @thslshadow;
     filter: none !important;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
     margin-left: auto;
     margin-right: auto;
-    @media (max-width: 767px) {
-      margin-top: 6%;
-      left: 20px;
-      top: 15px;
-    }
+
     h4 {
       font-family: @font-heavy;
       font-size: 35px;
@@ -230,9 +220,10 @@
   padding: 0;
   font-family: @font-light;
   overflow: hidden;
+  color: #1A2D3C;
   background-color: @modal-content-bg;
   .spacer-content {
-    padding: 5%;
+    padding:  6rem;
   }
 }
 
@@ -278,7 +269,8 @@
 
 .participacao {
   .titulosmodal {
-    font-size: 8px;
+    font-size: 1rem;
+    font-weight: 700;
   }
 }
 
@@ -312,4 +304,7 @@
   .img-responsive {
     margin: 0 auto;
   }
+}
+.modal-backdrop {
+  background-color: #1A2D3C;
 }
