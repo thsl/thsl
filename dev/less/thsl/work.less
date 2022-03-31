@@ -3,19 +3,21 @@
 #trabalhos {
   overflow: hidden;
   padding-bottom: 0;
+  background-color: #1A2D3C;
   .listagem {
+    background-color: #1A2D3C;
     .job {
       overflow: hidden;
       //height: 100vh;
-      width: 100%;
       margin: 0 0 -1px 0;
-      padding: 120px 0;
+      padding: 5rem 5rem 7.5rem 5rem;
       position: relative;
       transition: all .4s ease-out;
       background-color: #000;
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat;
+      margin: 2.5rem;
       .fill-image {
         background-color: #000;
         background-position: center;
@@ -29,19 +31,14 @@
         @media (min-width: @screen-lg) {
           padding-top: 30%;
         }
-        &:hover {
-          -webkit-transform: scale(1.08);
-          transform: scale(1.08);
-        }
+
       }
       .img-imgjobscontent {
         margin-top: 30px;
         text-align: center;
       }
       &:hover {
-        //cursor: pointer;
-        -webkit-transform: scale(1.05);
-        transform: scale(1.05);
+
         transition: all .4s ease-out;
         .text-muted {
           text-shadow: 0 4px 3px rgba(0, 0, 0, 0.2);
