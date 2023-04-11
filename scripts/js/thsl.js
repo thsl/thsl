@@ -51,3 +51,12 @@ $(window).on('popstate', function () {
 $('#ModalJobs').on('hidden', function () {
     $(this).removeData('modal');
 });
+
+$(document).ready(function () {
+    var rellax = new Rellax('.rellax', {
+        Fcenter: true
+    });
+});
+$(document).ready(function () {
+    new WOW().init();
+});

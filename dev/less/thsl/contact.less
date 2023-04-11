@@ -6,7 +6,7 @@
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
-  color: @light;
+  color:  @primary;
   //font-family: "droid", Georgia, "Times New Roman", serif;
   text-align: center;
 
@@ -14,7 +14,7 @@
     margin-top: 30px;
 
     a {
-      color: #fff;
+      color: @primary;
     }
 
     .clearfix();
@@ -50,42 +50,20 @@
 }
 
 .btn-social {
-  width: 30px;
-  height: 30px;
+  width: 40px;
+  height: 40px;
   margin-top: 5px;
   padding: 0;
-  opacity: (0.5);
-  font-size: 20px;
-  color: #fff;
+  font-size: 32px;
+  color: @primary;
   border-radius: 15px;
   background: transparent;
   -webkit-transition: background .1s ease-in-out;
   -moz-transition: background .1s ease-in-out;
   transition: background .1s ease-in-out;
   &:hover, &:focus {
-    outline: none;
-    color: #fff;
-    border: 1px solid #fff;
-    border-radius: 15px;
-    background: fade(#77b3c3, 10%);
-    opacity: (1);
+    
   }
-  i.animated {
-    -webkit-transition-property: -webkit-transform;
-    -webkit-transition-duration: 1s;
-    -moz-transition-property: -moz-transform;
-    -moz-transition-duration: 1s;
-  }
-  &:hover {
-    i.animated {
-      -webkit-animation-name: pulse;
-      -moz-animation-name: pulse;
-      -webkit-animation-duration: 1.5s;
-      -moz-animation-duration: 1.5s;
-      -webkit-animation-iteration-count: infinite;
-      -moz-animation-iteration-count: infinite;
-      -webkit-animation-timing-function: linear;
-      -moz-animation-timing-function: linear;
-    }
-  }
+  
+  
 }
