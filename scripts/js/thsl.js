@@ -60,3 +60,14 @@ $(document).ready(function () {
 $(document).ready(function () {
     new WOW().init();
 });
+
+$(document).ready(function () {
+
+    /*$(".item1, .item2, .item3, .item4, .item5, .item6").each(function(index) {
+        $(this).css({
+          left: Math.random() * ($(".main").width() - $(this).width()),
+          top: Math.random() * ($(".main").height() - $(this).height())
+        });
+      });*/
+
+});
