@@ -30,20 +30,33 @@
 
 </head>
 
-<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="no-touch">
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="no-touch" data-anm=".anm">
     <div class="wrapper">
 
         <header class="intro">
             <div class="isometric-screens">
                 <div class="isometric-itens">
-                    <img class="img-adaptative iso-item blur-sm rellax" style="width: 42%;top: 12%;right: -27%;"
-                        data-rellax-speed="10" data-rellax-percentage="1" src="images/home/isometrics/screen-0.png">
-                    <img class="img-adaptative iso-item rellax" style="width: 30%; top:10%; left:-10%;"
-                        data-rellax-speed="10" data-rellax-percentage="1" src="images/home/isometrics/screen-1.png">
-                    <img class="img-adaptative iso-item rellax" style="width: 50%; top:12%; right:-30%;"
-                        data-rellax-speed="0.2" data-rellax-percentage="-0.2" src="images/home/isometrics/screen-2.png">
-                        <img class="img-adaptative iso-item rellax" style="width: 45%; top:-10%; right:-10%;"
-                        data-rellax-speed="0.2" data-rellax-percentage="-0.2" src="images/home/isometrics/screen-3.png">
+
+                    <img class="img-adaptative iso-item rellax" data-rellax-speed="1" data-rellax-percentage="-0.3"
+                        src="images/home/isometrics/screen-01.png" >
+
+                    <img class="img-adaptative iso-item rellax" data-rellax-speed="1" data-rellax-percentage="-0.6"
+                        src="images/home/isometrics/screen-02.png">
+
+                    <img class="img-adaptative iso-item rellax" data-rellax-speed="-0.9" data-rellax-percentage="-0.2"
+                        src="images/home/isometrics/screen-03.png">
+
+                        <img class="img-adaptative iso-item rellax" data-rellax-speed="-0.3" data-rellax-percentage="-0.1"
+                        src="images/home/isometrics/screen-04.png">
+                       
+                        <img class="img-adaptative iso-item rellax" data-rellax-speed="-0.3" data-rellax-percentage="-0.1"
+                        src="images/home/isometrics/screen-05.png">
+
+                        <img class="img-adaptative iso-item rellax" data-rellax-speed="3" data-rellax-percentage="1"
+                        src="images/home/isometrics/screen-08.png">
+
+
+
 
                 </div>
             </div>
@@ -52,15 +65,17 @@
                 <div class="container">
                     <div class="row">
                         <div class=" col-md-12 text-uppercase text-center">
-                            <p>Hello! I’m <strong>Thiago Lopes</strong>, a senior</p>
-                            <h1>Product Designer</h1>
-                            <p class="mt-md">I do User Experience design and lead teams in complex projects</p>
-                            <div class="clearfix mt-lg">
+                            <div class="rellax" data-rellax-speed="2" data-rellax-percentage="0.5">
+                                <p>Hello! I’m <strong class="strong">Thiago Lopes</strong> a senior</p>
+                                <h1>Product Designer</h1>
+                                <p>UX Specialist & Team Leader</p>
+                                <div class="clearfix mt-lg">
 
-                                <a href="https://www.linkedin.com/in/thsl/" target="_blank" class="btn btn-social">
-                                    <i class="ion-social-linkedin-outline"></i> </a>
-                                <a href="https://github.com/thsl" target="_blank" class="btn btn-social ml-lg">
-                                    <i class="ion-social-github"></i> </a>
+                                    <a href="https://www.linkedin.com/in/thsl/" target="_blank" class="btn btn-social">
+                                        <i class="ion-social-linkedin-outline"></i> </a>
+                                    <a href="https://github.com/thsl" target="_blank" class="btn btn-social ml-lg">
+                                        <i class="ion-social-github"></i> </a>
+                                </div>
                             </div>
                         </div>
 
@@ -78,8 +93,10 @@
 
                         <div class="row">
                             <div class="col-sm-5 mt-lg text-right">
-                                <img class="img-adaptative rounded-md shadow-md rellax" data-rellax-speed="1"
-                                    data-rellax-percentage="0.5" width="320" src="images/home/thsl.jpg">
+                                <img class="img-adaptative rounded-md shadow-md rellax" data-rellax-speed="0.5"
+                                    data-rellax-percentage="-0.3" width="320" src="images/home/thsl.jpg">
+                                <!-- 
+                                    data-tilt data-tilt-max="50" data-tilt-speed="50" data-tilt-perspective="100" -->
                             </div>
                             <div class="col-sm-offset-1 col-sm-5 text-left">
                                 <h3 class="divisor-title">Who I am</h3>
@@ -107,7 +124,7 @@
 
             <section id="trabalhos">
                 <div class="listagem">
-                    <section class="job wow fadeInUpBig" data-wow-duration="1s" data-wow-delay="0.5s">
+                    <section class="job wow fadeInUp" data-wow-duration="1s" data-wow-delay="0.5s">
 
                         <div class="container-fluid text-left">
                             <div class="row mt-md">
@@ -126,7 +143,7 @@
                                 </div>
                                 <div class="col-md-5 col-md-offset-1">
                                     <img class="img-adaptative rounded-md shadow-md" width="536"
-                                        src="portfolio/images/sebraeagro/home-farmersguide.jpg">
+                                        src="portfolio/images/sebraeagro/home-farmersguide.jpg"  data-tilt>
                                 </div>
                             </div>
                         </div>
@@ -264,7 +281,13 @@
     <script type="text/javascript" src="scripts/js/jquery.easing.min.js"></script>
     <script type="text/javascript" src="scripts/js/rellax.min.js"></script>
     <script type="text/javascript" src="scripts/js/wow.min.js"></script>
+    <script type="text/javascript" src="scripts/js/vanilla.js"></script>
+    <script type="text/javascript" src="scripts/js/anm.min.js"></script>
     <script type="text/javascript" src="scripts/js/thsl.js"></script>
+
+
+
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-W9Z5LX9EV1"></script>
     <script>
