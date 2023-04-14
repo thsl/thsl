@@ -5,18 +5,42 @@
   padding-bottom: 0;
   background-color: @white;
   color: @thsldarkgrey;
+
   .listagem {
     background-color: @white;
+
     .job {
       overflow: hidden;
-      //height: 100vh;
-      margin: 0 0 -1px 0;
       padding: 5rem 5rem 7.5rem 5rem;
       position: relative;
       transition: all .4s ease-out;
-      
       margin: 2.5rem;
-      .fill-image {
+      cursor: pointer;
+
+      .card-portfolio {
+        position: relative;
+        //height: 100vh;
+        transform-style: preserve-3d;
+        
+        .card-content {
+          position: relative;
+          
+          .img-bck {
+            position: relative;
+            //width: 100%;
+          }
+          .img-over {
+            position: absolute;
+            left: 0;
+            top:0;
+            //width: 100%;
+            text-align: center;
+            transform: translateZ(10px);
+          }
+        }
+      }
+
+      /*.fill-image {
         background-color: #000;
         background-position: center;
         background-size: cover;
@@ -44,7 +68,7 @@
         .text-white {
           text-shadow: 0 4px 3px rgba(0, 0, 0, 0.31);
         }
-      }
+      }*/
 
     }
   }
