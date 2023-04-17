@@ -11,6 +11,7 @@ body {
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
+  scroll-behavior: smooth !important;
   @media (max-width: @screen-md) {}
 }
 
@@ -35,16 +36,15 @@ h5,
 .h5,
 h6,
 .h6 {
-  font-family: @font-heavy;
-  font-weight: 900;
-  letter-spacing: -0.04em;
+  font-family: @font-light;
+  font-weight: 600;
+ // letter-spacing: -0.0015em;
   position: relative;
   line-height: initial;
-  text-transform: uppercase;
 }
 
 .divisor-title {
-  padding-bottom: 64px;
+  padding-bottom: 2em;
 
   &::after {
     position: absolute;
@@ -54,7 +54,7 @@ h6,
     height: 1px;
     background-color: @light;
     left: 0;
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 
@@ -125,7 +125,7 @@ strong {
 }
 
 .btn {
-  font-family: @font-heavy;
+  font-family: @font-light;
   font-weight: 700;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -1054,7 +1054,7 @@ body {
 }
 
 .secondary-font {
-  font-family: @font-heavy !important;
+  font-family: @font-light !important;
 }
 
 .rounded-sm {
@@ -1077,4 +1077,7 @@ body {
 }
 .blur-lg{
   filter: blur(25px);
+}
+.pelouros{
+  color: @pelouros;
 }
