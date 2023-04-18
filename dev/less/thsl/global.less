@@ -5,15 +5,14 @@ body {
   height: 100%;
   font-family: @font-light;
   font-size: 18px;
-  color: @light;
+  color: @dark;
   text-rendering: optimizeLegibility;
-  background-color: #1A2D3C;
+  background-color: @white;
   text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.004);
   text-rendering: optimizeLegibility !important;
   -webkit-font-smoothing: antialiased !important;
-  @media (max-width: @screen-md) {
-
-  }
+  scroll-behavior: smooth !important;
+  @media (max-width: @screen-md) {}
 }
 
 html {
@@ -25,75 +24,92 @@ html {
   overflow: hidden;
 }
 
-h1, .h1,
-h2, .h2,
-h3, .h3,
-h4, .h4,
-h5, .h5,
-h6, .h6 {
-  font-family: @font-heavy;
-    font-weight: 400;
-    letter-spacing:normal;
-    position: relative;
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3,
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  font-family: @font-light;
+  font-weight: 600;
+ // letter-spacing: -0.0015em;
+  position: relative;
+  line-height: initial;
 }
 
-.divisor-title{
-  padding-bottom: 64px;
-  &::after{
-    position:absolute;
+.divisor-title {
+  padding-bottom: 2em;
+
+  &::after {
+    position: absolute;
     width: 40%;
     bottom: 32px;
     content: '';
     height: 1px;
     background-color: @light;
     left: 0;
-    opacity: 0.2;
+    opacity: 0.1;
   }
 }
 
-h1, .h1 {
+h1,
+.h1 {
   font-size: 5.61rem;
 }
 
-h2, .h2 {
+h2,
+.h2 {
   font-size: 4.209rem;
 }
 
-h3, .h3 {
+h3,
+.h3 {
   font-size: 3.157rem;
 }
 
-h4, .h4 {
+h4,
+.h4 {
   font-size: 2.369rem;
 }
-h5, .h5 {
+
+h5,
+.h5 {
   font-size: 1.777rem;
 }
 
-h6, .h6 {
+h6,
+.h6 {
   font-size: 1.333rem;
 }
 
 p {
   margin: 0 0 25px;
-  line-height: 1.2;
+  line-height: 1.5;
 }
 
 
 
-@media (min-width: 767px) {
+/*@media (min-width: 767px) {
   p {
     margin: 0 0 20px;
     line-height: 1.2;
   }
-}
+}*/
 
 a {
   color: @primary;
   -webkit-transition: all .2s ease-in-out;
   -moz-transition: all .2s ease-in-out;
   transition: all .2s ease-in-out;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     text-decoration: none;
     color: darken(@primary, 20%);
   }
@@ -109,7 +125,7 @@ strong {
 }
 
 .btn {
-  font-family: @font-heavy;
+  font-family: @font-light;
   font-weight: 700;
   -webkit-transition: all .3s ease-in-out;
   -moz-transition: all .3s ease-in-out;
@@ -120,7 +136,9 @@ strong {
   border: none;
   color: @light;
   background-color: #49717c;
-  &:hover, &:focus {
+
+  &:hover,
+  &:focus {
     border: none;
     outline: none;
     color: @light;
@@ -158,6 +176,7 @@ body {
   width: 100%;
   height: auto;
   text-align: center;
+
   // .inner{ margin-top: 60px;}
   .inner {
     margin: 30px auto;
@@ -886,6 +905,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -895,6 +915,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -904,6 +925,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -913,6 +935,7 @@ body {
   from {
     opacity: 0;
   }
+
   to {
     opacity: 1;
   }
@@ -922,6 +945,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -931,6 +955,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -940,6 +965,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -949,6 +975,7 @@ body {
   from {
     opacity: 1;
   }
+
   to {
     opacity: 0;
   }
@@ -956,6 +983,7 @@ body {
 
 .text-white {
   color: #fff;
+
   a {
     color: #fff;
   }
@@ -975,9 +1003,9 @@ body {
 }
 
 .btn-outline {
-  color: @light;
-  border: 1px solid @light;
-  border-radius: 4px;
+  color: @pelouros;
+  border: 2px solid @pelouros;
+  border-radius: 8px;
   text-align: center;
   padding: 16px 32px;
   text-decoration: none;
@@ -986,31 +1014,28 @@ body {
   margin: 16px 0;
   line-height: 3;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   background-color: transparent;
   cursor: pointer;
-  &:hover{
-    border: 1px solid #fff;
-    background-color: RGBA(255,255,255,0.22);
-    color: #fff;
+
+  &:hover {
+    color: @white;
+    border: 2px solid  lighten(@pelouros, 10%);
     cursor: pointer;
+    background-color: lighten(@pelouros, 10%);
   }
-  &:active, &:focus{
-    border: 1px solid #fff;
-    background-color: RGBA(255,255,255,0.22);
-    color: #fff;
-    cursor: pointer;
-    &:hover{
-      border: 1px solid #fff;
-      background-color: RGBA(255,255,255,0.22);
-      color: #fff;
-      cursor: pointer;
-    }
-  }
+
+  &:active,
+  &:focus {}
 
   @media (max-width: @screen-sm) {
     white-space: nowrap;
   }
+}
+
+.btn-primary {
+  color:@pelouros;
+  border: 2px solid @pelouros;
 }
 
 .btn-white {
@@ -1029,9 +1054,35 @@ body {
   background-color: transparent;
 }
 
-.primary-font{
+.primary-font {
   font-family: @font-light !important;
 }
-.secondary-font{
-  font-family: @font-heavy !important;
+
+.secondary-font {
+  font-family: @font-light !important;
+}
+
+.rounded-sm {
+  border-radius: 0.5em;
+}
+
+.rounded-md {
+  border-radius: 1em;
+}
+
+.shadow-md {
+  filter: drop-shadow(0px 5px 15px rgba(0, 0, 0, 0.2));
+}
+
+.blur-sm{
+  filter: blur(5px);
+}
+.blur-md{
+  filter: blur(15px);
+}
+.blur-lg{
+  filter: blur(25px);
+}
+.pelouros{
+  color: @pelouros;
 }

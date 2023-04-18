@@ -1,15 +1,6 @@
-// THSL: Portfolio 2016
+// THSL: Portfolio 2023
 
-// jQuery for page scrolling feature - requires jQuery Easing plugin
-$(function () {
-    $('a.page-scroll').bind('click', function (event) {
-        var $anchor = $(this);
-        $('html, body').stop().animate({
-            scrollTop: $($anchor.attr('href')).offset().top
-        }, 900, 'easeInOutExpo');
-        event.preventDefault();
-    });
-});
+
 
 $(function () {
     // See if this is a touch device
@@ -51,3 +42,25 @@ $(window).on('popstate', function () {
 $('#ModalJobs').on('hidden', function () {
     $(this).removeData('modal');
 });
+
+$(document).ready(function () {
+    var rellax = new Rellax('.rellax', {
+        Fcenter: true
+    });
+});
+$(document).ready(function () {
+    new WOW().init();
+});
+
+$(document).ready(function () {
+    //farme's guide
+    $('#img-over-fg1').jParallax({ moveFactor: 5 });
+    $('#img-over-fg2').jParallax({ moveFactor: 20 });
+
+    $('#img-over-ds2').jParallax({ moveFactor: 20 });
+    $('#img-over-ds3').jParallax({ moveFactor: 20 });
+    $('#img-over-ds4').jParallax({ moveFactor: 20 });
+    $('#img-over-ds5').jParallax({ moveFactor: 20 });
+
+});
+

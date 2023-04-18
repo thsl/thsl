@@ -2,33 +2,148 @@
 
 
 .intro {
+  position: relative;
   display: table;
   width: 100%;
-  height: 100%;
-  padding: 100px 0;
-  text-align: left;
-  color: @light;
-  background: rgba(57, 92, 121, 1);
-  /*background: -moz-linear-gradient(-45deg, rgba(57, 92, 121, 1) 0%, rgba(95, 148, 191, 1) 100%);
-  background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(57, 92, 121, 1)), color-stop(100%, rgba(95, 148, 191, 1)));
-  background: -webkit-linear-gradient(-45deg, rgba(57, 92, 121, 1) 0%, rgba(95, 148, 191, 1) 100%);
-  background: -o-linear-gradient(-45deg, rgba(57, 92, 121, 1) 0%, rgba(95, 148, 191, 1) 100%);
-  background: -ms-linear-gradient(-45deg, rgba(57, 92, 121, 1) 0%, rgba(95, 148, 191, 1) 100%);
-  background: linear-gradient(135deg, rgba(57, 92, 121, 1) 0%, rgba(95, 148, 191, 1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#395c79', endColorstr='#5f94bf', GradientType=1);*/
-  background: url("../images/home/perspective-thsl-jobs.jpg") no-repeat center center  #395c79;
+  height: auto;
+  padding: 200px 0;
+  color: @white;
+  background: url("../images/home/perspective-thsl-jobs.jpg") no-repeat center center #395c79;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   background-size: cover;
   -o-background-size: cover;
+  background-attachment: fixed;
+  background-position: bottom center;
+
+
+
   .intro-body {
     display: table-cell;
     vertical-align: middle;
+
     @media (max-width: @screen-sm) {
       text-align: left;
     }
+
+    h1 {
+      font-size: 6rem;
+      line-height: normal;
+      margin: 0;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5 {
+      margin: 0;
+      line-height: 1.35;
+    }
+
+    p {
+      line-height: normal;
+      margin: 0;
+
+
+    }
+
+    .strong {
+      font-weight: 700;
+    }
+
+
   }
+
 
 }
 
+.isometric-screens {
 
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: auto;
+  overflow: visible;
+
+  .isometric-itens {
+    position: relative;
+    height: auto;
+    overflow: visible;
+
+    .iso-item {
+      position: absolute;
+      width: 100%;
+    }
+
+  }
+
+
+  .vert-move-3 {
+    -webkit-animation: mover 3s infinite alternate;
+    animation: mover 3s infinite alternate;
+  }
+
+  .vert-move-3 {
+    -webkit-animation: mover 3s infinite alternate;
+    animation: mover 3s infinite alternate;
+  }
+
+  .vert-move-1 {
+    -webkit-animation: mover 1.5s infinite alternate;
+    animation: mover 1.5s infinite alternate;
+  }
+
+  .vert-move-1 {
+    -webkit-animation: mover 1.5s infinite alternate;
+    animation: mover 1.5s infinite alternate;
+  }
+
+  .vert-move-5 {
+    -webkit-animation: mover 5s infinite alternate;
+    animation: mover 5s infinite alternate;
+  }
+
+  .vert-move-5 {
+    -webkit-animation: mover 5s infinite alternate;
+    animation: mover 5s infinite alternate;
+  }
+
+  @-webkit-keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-16px);
+    }
+  }
+
+  @keyframes mover {
+    0% {
+      transform: translateY(0);
+    }
+
+    100% {
+      transform: translateY(-16px);
+    }
+  }
+
+
+}
+
+#intro {
+  &::before {
+    content: '';
+    opacity: 1;
+    background: linear-gradient(180deg, rgba(24, 43, 58, 0) 0%, @greydarker 100%);
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 200px;
+
+  }
+}
