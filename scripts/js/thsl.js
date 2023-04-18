@@ -57,5 +57,10 @@ $(document).ready(function () {
     $('#img-over-fg1').jParallax({ moveFactor: 5 });
     $('#img-over-fg2').jParallax({ moveFactor: 20 });
 
+    $('#img-over-ds2').jParallax({ moveFactor: 20 });
+    $('#img-over-ds3').jParallax({ moveFactor: 20 });
+    $('#img-over-ds4').jParallax({ moveFactor: 20 });
+    $('#img-over-ds5').jParallax({ moveFactor: 20 });
+
 });
 

@@ -1003,9 +1003,9 @@ body {
 }
 
 .btn-outline {
-  color: @dark;
-  border: 2px solid @dark;
-  border-radius: 4px;
+  color: @pelouros;
+  border: 2px solid @pelouros;
+  border-radius: 8px;
   text-align: center;
   padding: 16px 32px;
   text-decoration: none;
@@ -1014,15 +1014,15 @@ body {
   margin: 16px 0;
   line-height: 3;
   text-transform: uppercase;
-  font-size: 12px;
+  font-size: 14px;
   background-color: transparent;
   cursor: pointer;
 
   &:hover {
     color: @white;
-    border: 2px solid @thsldarkgrey;
+    border: 2px solid  lighten(@pelouros, 10%);
     cursor: pointer;
-    background-color: @dark;
+    background-color: lighten(@pelouros, 10%);
   }
 
   &:active,
@@ -1031,6 +1031,11 @@ body {
   @media (max-width: @screen-sm) {
     white-space: nowrap;
   }
+}
+
+.btn-primary {
+  color:@pelouros;
+  border: 2px solid @pelouros;
 }
 
 .btn-white {
