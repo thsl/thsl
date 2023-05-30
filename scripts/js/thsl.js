@@ -63,4 +63,3 @@ $(document).ready(function () {
     $('#img-over-ds5').jParallax({ moveFactor: 20 });
 
 });
-

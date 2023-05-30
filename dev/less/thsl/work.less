@@ -1,7 +1,7 @@
 /*------------------- Trabalhos -------------------*/
 
 #trabalhos {
-  overflow: hidden;
+
   padding-bottom: 0;
   background-color: @greydarker;
   color: @white;
@@ -10,7 +10,7 @@
     padding: 0 0 6em 0;
 
     .job {
-      overflow: hidden;
+      //overflow: hidden;
       padding: 5rem 0 8rem 0;
       position: relative;
       transition: all .4s ease-out;
@@ -20,23 +20,28 @@
       .card-portfolio {
         position: relative;
         transform-style: preserve-3d;
+
         .card-content {
           position: relative;
-          
+
           .img-bck {
             position: relative;
           }
+
           .img-over {
             position: absolute;
             left: 0;
-            top:0;
+            top: 0;
             text-align: center;
             transform: translateZ(10px);
           }
         }
       }
-
+      .bigimg-01{
+        position: absolute;
+        top: 0;
+      }
+     
     }
   }
 }
-
