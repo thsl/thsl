@@ -142,20 +142,56 @@
                     <h4 class="mt-lg">Analyzing the data</h4>
                     <p>Totally 30 farmers, and 120 qualitative answers, were collected. After that, we compile the
                         answers and transform into numbers:</p>
-                    <h5>About the pesticides:</h5>
-                    <ul>
+                    <h5 class="text-center">About the pesticides:</h5>
+                    <!--<ul>
                         <li>90% don't use apps information;</li>
                         <li>98% is important information;</li>
                         <li>80% use personal experience;</li>
-                    </ul>
+                    </ul>-->
+                    <div class="row spacer-content mt-lg">
 
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Apps</strong>
+                            <div class="statusdoprojeto" id="prt001"></div>
+                            <small>Don't use apps information</small>
+                        </div>
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Importance</strong>
+                            <div class="statusdoprojeto" id="prt002"></div>
+                            <small>Consider it an important information</small>
+                        </div>
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Experience</strong>
+                            <div class="statusdoprojeto" id="prt003"></div>
+                            <small>Use personal experience</small>
+                        </div>
+                    </div>
 
-                    <h5>About the pests:</h5>
-                    <ul>
+                    <h5 class="text-center">About the pests:</h5>
+                    <div class="row spacer-content">
+
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Apps</strong>
+                            <div class="statusdoprojeto" id="prt004"></div>
+                            <small>Don't use apps information</small>
+                        </div>
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Importance</strong>
+                            <div class="statusdoprojeto" id="prt005"></div>
+                            <small>Consider it an important information</small>
+                        </div>
+                        <div class="col-md-4 text-center mt-lg">
+                            <strong class="">Experience</strong>
+                            <div class="statusdoprojeto" id="prt006"></div>
+                            <small>Use personal experience</small>
+                        </div>
+                    </div>
+                     <!--<ul>
                         <li>85% don't use apps information;</li>
                         <li>89% is important information;</li>
                         <li>85% use the personal; </li>
-                    </ul>
+                    </ul>-->
+                    
                 </div>
             </div>
 
@@ -180,17 +216,9 @@
             <div class="row">
                 <div class="col-md-12">
                     <h4 class="h2 mt-lg">Design Concepts </h4>
-                    <img src="portfolio/images/sebraeagro/sbagro006.jpg" class="img-adaptative" />
+                    
                 </div>
             </div>
-
-
-
-
-
-
-
-
             <!--<div class="row spacer-content">
 
                 <div class="col-md-6 text-center">
@@ -202,17 +230,70 @@
 
         </div>
 
-
-
-
     </div>
+    <div class="container-fluid text-center spacer-content" style="background-color: #000000;">
+        <img class="img-adaptative" src="portfolio/images/sebraeagro/farmersguide-gif01.gif">
+    </div>
+    <img class="img-adaptative" src="portfolio/images/sebraeagro/sbagro009.jpg">
+    <img class="img-adaptative" src="portfolio/images/sebraeagro/sbagro006.jpg"/>
+    
 </div>
 
 <script type="text/javascript">
     var myCircle = Circles.create({
         id: 'prt001',
         radius: 50,
-        value: 50,
+        value: 90,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+    var myCircle = Circles.create({
+        id: 'prt002',
+        radius: 50,
+        value: 98,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+    var myCircle = Circles.create({
+        id: 'prt003',
+        radius: 50,
+        value: 80,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+    var myCircle = Circles.create({
+        id: 'prt004',
+        radius: 50,
+        value: 85,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+    var myCircle = Circles.create({
+        id: 'prt005',
+        radius: 50,
+        value: 89,
+        width: 10,
+        colors: ['#d5d5d5', '#666565'],
+        text: function (value) {
+            return value + '<span class=\'percentual\'>%</span>';
+        }
+    });
+    var myCircle = Circles.create({
+        id: 'prt006',
+        radius: 50,
+        value: 85,
         width: 10,
         colors: ['#d5d5d5', '#666565'],
         text: function (value) {
